@@ -1,16 +1,17 @@
-/* simple pattern like  1 1 1 1 1
- *                      2 2 2 2 2
- *                      3 3 3 3 3
- *                      4 4 4 4 4
- *                      5 5 5 5 5 
- */
+package MediumLevelPattern;
 
+/* Pattern Like              1
+ *                           2 1 
+ *                           3 2 1
+ *                           4 3 2 1
+ *                           5 4 3 2 1
+ */
 
 public class Pattern4 {
     public static void main(String[] args) {
         for(int i = 1;i<=5;i++){
-            for(int j = 1;j<=5;j++){
-                System.out.print(i  + " ");
+            for(int j = i ; j>=1 ; j--){
+                System.out.print(j + " ");
             }
             System.out.println();
         }
